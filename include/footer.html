@@ -1,0 +1,97 @@
+<footer class="footer" >
+        <div class="container">
+            <div class="footer__top">
+                <img class="footer logo"
+                src="./img/logo.png">  
+                <ul class="wrap--cols footer__table">
+                    <li class="">
+                        <ul class="footer__table--name">
+                            <li class="">
+                                <span class="text-remark">대표</span>
+                                이종혁
+                            </li>
+                            <li class="">
+                                <span class="text-remark">연락처</span>
+                                070-5066-0525
+                            </li>
+                            <li class="">
+                                <span class="text-remark">이메일</span>
+                                seoreu@seoreu.com
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="wrap--rows"
+                    id="about-table-location">
+                        <span class="text-remark">주소</span>
+                        <ul class="footer__table--address">
+                            <li>
+                                (본사) 부산광역시 동구 망양로 978 (범일동) 4층, 403-404호
+                            </li>
+                            <li>
+                                (서울) 서울특별시 강남구 봉은사로61길 15 (삼성동) 3층
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <small>Copyright 2022 SEOREU. All Right Reserved </small>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrap--cols center change footer__bottom">
+                <!-- <ul class="wrap--rows">
+                    <li class="text-anchor">개인정보처리방침</li>
+                </ul> -->
+                <ul class="footer__shortcut wrap--rows">
+                    <li>
+                        <a class="text-anchor"
+                        href="https://blog.naver.com/seoreu_data"
+                        target="_blank">
+                            네이버 블로그
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://pf.kakao.com/_CDpxib"
+                        target="_blank"
+                        class="text-anchor">카카오</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/seoreu_official/"
+                        target="_blank"
+                        class="text-anchor">인스타그램</a>
+                    </li>
+                </ul>
+                <div class="wrap--cols footer__select-wrap">
+                    <div
+                    id="btn-support"
+                    class="footer__select-wrap--select wrap--rows">
+                        <p>관계사 바로가기</p>
+                        <ion-icon name="add-outline"></ion-icon>
+                    </div>
+                    <ul 
+                    id="support-list"
+                    class=" wrap--cols footer__select-wrap--option">
+                        <li class="wrap--rows center between">
+                            <a
+                            href="http://seoreu.com/"
+                            target="_blank">서르
+                            </a>
+                            <ion-icon class="hidden" name="open-outline"></ion-icon>
+                        </li>
+                        <!-- <li><a>홈페이지 링크 02</a></li> -->
+                        <!-- <li><a>홈페이지 링크 03</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $('#support-list').hide()
+        $('#btn-support').on('click',function(){
+            let icon = $('#btn-support').find('ion-icon');
+            $('#support-list').slideToggle(250);
+            $('#btn-support').toggleClass('active')
+            icon.attr('name')=='add-outline'?
+            icon.attr('name','remove-outline'):
+            icon.attr('name','add-outline');
+        })
+    </script>

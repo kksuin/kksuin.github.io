@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="./js/loadHTML.js"></script>
+    <script>
+        loadHTML("./include/head.html");
+    </script>
+    <link rel="stylesheet" href="/css/main.css?v=1">
+    <title>Recycle</title>
+</head>
+<body>
+    <script>
+        loadHTML("./include/header.html");
+    </script>
+    <script>
+        $(function(){
+            changeHeader()
+        })
+        function changeHeader(){
+            $('.header__logo-img').attr('src','/img/logo-white.png')
+            $('.header').addClass('white');
+        }
+    </script>
+    <main id="main" class="">
+        <div class="swiper-container swiper">
+            <div class="swiper-wrapper">
+                <section id="section-wimple" class="swiper-slide swiper-lazy">
+                        <video playsinline autoplay muted loop>
+                            <source src="/img/main/wimple_bin.mp4" midia="(min-width:481px)"
+                            type="video/mp4">
+                        </video>
+                        <div class="container full-page-text">
+                            <h2 class="headline-1">Wimple Bin</h2>
+                            <p class="">
+                                서르는 분리수거함에 인공지능 기술을 적용하여<br>
+                                쓰레기 분리수거의 불편함과 환경문제를 해결했습니다.
+                            </p>
+                            <a class="btn-link" href="/solution.html">
+                                솔루션 바로가기
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <span class="scroll-down-icon">
+                            <i class="uit uit-mouse-alt-2"></i>
+                            <i class="uit uit-angle-double-down"></i>
+                        </span>
+                    </section>
+                    <section id="section-gpgp"
+                    class="swiper-slide swiper-lazy">
+                    <div class="container full-page-text">
+                        <h2 class="headline-1">쓰레기로 만들어진 국가 GPGP<span class="text-xs">Great Pacific Garbage Patch</span></h2>
+                        <p class="">
+                            북태평양 한가운데 있는 거대한 쓰레기 섬을 알고 있나요?<br>
+                            이 쓰레기 섬은 우리나라의 약 16배의 크기로 2017년 정식국가로 임명되어 있고<br>
+                            쓰레기 재활용의 경각심을 일깨우고 있습니다.
+                        </p>
+                    </div>
+                    <!-- <a class="btn-link" href="">사업 소개 바로가기</a> -->
+                    <span class="scroll-down-icon">
+                        <i class="uit uit-mouse-alt-2"></i>
+                        <i class="uit uit-angle-double-down"></i>
+                    </span>
+                </section>
+                <section id="section-sdgs" class="swiper-slide swiper-lazy">
+                    <video playsinline autoplay muted loop>
+                        <source src="/img/main/sdgs.mp4" midia="(min-width:481px)"
+                        type="video/mp4">
+                    </video>
+                    <div class="container full-page-text">
+                        <h2 class="headline-1">The Loop of Increased Resource Circulation</h2>
+                        <p class="">
+                            서르는 SDGs(Sustainable Development Goals)<br>
+                            지속가능한 소비, 생산 양식 보장 및 기후 변화를 대응하고<br>
+                            환경오염 문제를 해결합니다.
+                        </p>
+                        <a class="btn-link" href="/about.html">
+                            회사 소개 바로가기
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+                    
+                    
+                </section>
+            </div>
+        </div>
+        
+    </main>
+    <script>
+        loadHTML("./include/footer.html");
+    </script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            speed:800,
+            lazy:true,
+            mousewheel: true,
+            debugger: true,
+        });
+        const observer = lozad('.lozad',{
+            enableAutoReload: true
+        });
+    </script>
+        
+</body>
+</html>
