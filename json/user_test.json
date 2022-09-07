@@ -1,0 +1,206 @@
+[
+    {
+        "id":1,
+        "mac_addr":"WP-000-000-0001",
+        "family":[
+            {
+                "name":"홍길동",
+                "count":16,
+                "first_enter":"2022-01-01 10:10",
+                "last_enter":"2022-01-01 10:10",
+                "notifi":0
+            },
+            {
+                "name":"추경진",
+                "count":16,
+                "first_enter":"2022-01-01 10:10",
+                "last_enter":"2022-01-01 10:10",
+                "notifi":0
+            },
+            {
+                "name":"홍승훈",
+                "count":16,
+                "first_enter":"2022-01-01 10:10",
+                "last_enter":"2022-01-01 10:10",
+                "notifi":1
+            },
+            {
+                "name":"예기연",
+                "count":16,
+                "first_enter":"2022-01-01 10:10",
+                "last_enter":"2022-01-01 10:10",
+                "notifi":2
+            }
+        ]
+    },
+    {
+        "id":2,
+        "mac_addr":"WP-000-456-D99P",
+        "family":[
+            {
+                "name":"탁수근",
+                "count":16,
+                "first_enter":"2022-01-01 10:10",
+                "last_enter":"2022-01-14 05:40",
+                "notifi":1
+            },
+            {
+                "name":"오기영",
+                "count":16,
+                "first_enter":"2022-01-14 05:40",
+                "last_enter":"2022-07-29 05:13",
+                "notifi":0
+            },
+            {
+                "name":"남홍석",
+                "count":16,
+                "first_enter":"2022-07-29 05:13",
+                "last_enter":"2022-01-14 05:40",
+                "notifi":0
+            },
+            {
+                "name":"이문옥",
+                "count":16,
+                "first_enter":"2022-03-30 00:25",
+                "last_enter":"2022-01-01 10:10",
+                "notifi":1
+            }
+        ]
+    },
+    {
+        "id":3,
+        "mac_addr":"WP-234-000-A90P",
+        "family":[
+            {
+                "name":"유현철",
+                "count":16,
+                "first_enter":"2022-01-01 10:10",
+                "last_enter":"2022-01-14 05:40",
+                "notifi":1
+            },
+            {
+                "name":"송영수",
+                "count":16,
+                "first_enter":"2022-01-14 05:40",
+                "last_enter":"2022-01-01 10:10",
+                "notifi":1
+            },
+            {
+                "name":"풍진주",
+                "count":16,
+                "first_enter":"2022-03-30 00:25",
+                "last_enter":"2022-01-01 10:10",
+                "notifi":0
+            },
+            {
+                "name":"남궁미옥",
+                "count":16,
+                "first_enter":"2022-01-14 05:40",
+                "last_enter":"2022-01-01 10:10",
+                "notifi":1
+            }
+        ]
+    },
+    {
+        "id":4,
+        "mac_addr":"WP-123-000-0004",
+        "family":[
+            {
+                "name":"황보명원",
+                "count":16,
+                "first_enter":"2022-01-01 10:10",
+                "last_enter":"2022-09-16 13:22",
+                "notifi":0
+            },
+            {
+                "name":"정원철",
+                "count":16,
+                "first_enter":"2022-07-29 05:13",
+                "last_enter":"2022-03-30 00:25",
+                "notifi":0
+            },
+            {
+                "name":"제갈형진",
+                "count":16,
+                "first_enter":"2022-07-29 05:13",
+                "last_enter":"2022-01-01 10:10",
+                "notifi":1
+            },
+            {
+                "name":"강준하",
+                "count":16,
+                "first_enter":"2022-03-30 00:25",
+                "last_enter":"2022-09-16 13:22",
+                "notifi":1
+            }
+        ]
+    },
+    {
+        "id":5,
+        "mac_addr":"WP-000-456-0005",
+        "family":[
+            {
+                "name":"안윤석",
+                "count":16,
+                "first_enter":"2022-09-16 13:22",
+                "last_enter":"2022-09-16 13:22",
+                "notifi":0
+            },
+            {
+                "name":"류하은",
+                "count":16,
+                "first_enter":"2022-01-01 10:10",
+                "last_enter":"2022-07-29 05:13",
+                "notifi":1
+            },
+            {
+                "name":"탁홍주",
+                "count":16,
+                "first_enter":"2022-07-29 05:13",
+                "last_enter":"2022-01-01 10:10",
+                "notifi":1
+            },
+            {
+                "name":"배정연",
+                "count":16,
+                "first_enter":"2022-01-01 10:10",
+                "last_enter":"2022-07-29 05:13",
+                "notifi":1
+            }
+        ]
+    },
+    {
+        "id":6,
+        "mac_addr":"WP-000-000-0006",
+        "family":[
+            {
+                "name":"제갈효경",
+                "count":16,
+                "first_enter":"2022-01-01 10:10",
+                "last_enter":"2022-01-14 05:40",
+                "notifi":0
+            },
+            {
+                "name":"노나길",
+                "count":16,
+                "first_enter":"2022-01-14 05:40",
+                "last_enter":"2022-03-30 00:25",
+                "notifi":1
+            },
+            {
+                "name":"황보빛가람",
+                "count":16,
+                "first_enter":"2022-01-01 17:21",
+                "last_enter":"2022-07-29 05:13",
+                "notifi":0
+            },
+            {
+                "name":"유힘찬",
+                "count":16,
+                "first_enter":"2022-10-29 16:22",
+                "last_enter":"2022-02-27 21:29",
+                "notifi":0
+            }
+        ]
+    }
+]

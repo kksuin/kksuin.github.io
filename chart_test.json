@@ -1,0 +1,68 @@
+[
+    {
+        "category":"기기 고장",
+        "title":"연결이 안 돼요",
+        "date":"2022-08-01",
+        "state":false
+    },
+    {
+        "category":"앱 오류",
+        "title":"새로고침이 안 돼요",
+        "date":"2022-08-01",
+        "state":false
+    },
+    {
+        "category":"기타",
+        "title":"기기 할인 이벤트 같은 건 안 하나요?",
+        "date":"2022-08-01",
+        "state":false
+    },
+    {
+        "category":"기타",
+        "title":"이벤트 열어주세요",
+        "date":"2022-08-01",
+        "state":false
+    },
+    {
+        "category":"건의사항",
+        "title":"카테고리 늘려주세요",
+        "date":"2022-08-01",
+        "state":false
+    },
+    {
+        "category":"건의사항",
+        "title":"가족 수 늘려주세요",
+        "date":"2022-08-01",
+        "state":false
+    },
+    {
+        "category":"기기 고장",
+        "title":"자꾸 연결이 끊겨요",
+        "date":"2022-08-01",
+        "state":false
+    },
+    {
+        "category":"앱 오류",
+        "title":"가족 초대가 안 돼요",
+        "date":"2022-08-01",
+        "state":false
+    },
+    {
+        "category":"기타",
+        "title":"스토어 불편해요",
+        "date":"2022-08-01",
+        "state":false
+    },
+    {
+        "category":"건의사항",
+        "title":"수거도 할 수 있게 해주세요.",
+        "date":"2022-08-01",
+        "state":false
+    },
+    {
+        "category":"기타",
+        "title":"외국어 지원",
+        "date":"2022-08-30",
+        "state":false
+    }
+]

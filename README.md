@@ -1,4 +1,4 @@
-# Recycle_front
+# Admin
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin http://192.168.0.80/l_jh/recycle_front.git
+git remote add origin http://192.168.0.80/l_jh/admin.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](http://192.168.0.80/l_jh/recycle_front/-/settings/integrations)
+- [ ] [Set up project integrations](http://192.168.0.80/l_jh/admin/-/settings/integrations)
 
 ## Collaborate with your team
 
