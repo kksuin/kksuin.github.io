@@ -218,6 +218,10 @@ html,body{
     .change.wrap--cols{
         flex-direction: row;
     }
+    .change.wrap--cols.center{
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 /* header */

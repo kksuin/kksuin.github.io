@@ -78,8 +78,6 @@
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </a>
                     </div>
-                    
-                    
                 </section>
             </div>
         </div>
@@ -97,10 +95,50 @@
             lazy:true,
             mousewheel: true,
             debugger: true,
+            on: {
+                reachEnd: function () {
+                    setTimeout(() => {
+                        console.log('here')
+                        swiper.mousewheel.disable()
+                    }, 500);
+                }
+            }
         });
         const observer = lozad('.lozad',{
             enableAutoReload: true
         });
+
+        let _isVisible = false;
+
+        function handlerSwiper(){
+            if (checkVisible($('.footer')) && _isVisible == false) {
+                _isVisible=true;
+                
+            }
+            else if(checkVisible($('.footer')) == false && _isVisible == true) {
+                swiper.mousewheel.enable();
+                _isVisible=false;
+            }
+        }
+        $(window).on('scroll',function() {
+            handlerSwiper()
+        });
+
+        function checkVisible( element, eval ) {
+            eval = eval || "object visible";
+
+            let viewportHeight = $(window).height(), // Viewport Height
+                scrolltop = $(window).scrollTop(), // Scroll Top
+                y = $(element).offset().top,
+                elementHeight = $(element).height();   
+            
+            if (eval == "object visible"){
+                return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+            } 
+            if (eval == "above"){
+                return ((y < (viewportHeight + scrolltop)));
+            } 
+        }
     </script>
         
 </body>
