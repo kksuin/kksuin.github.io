@@ -33,8 +33,11 @@ html,body{
     }
 }
 @media all and (min-width:769px){
+    html,body{
+        font-size: 0.83vw;
+    }
     :root{
-        --distance-default:7rem
+        --distance-default:10.37vh
     }
 }
 .hidden{
@@ -93,7 +96,7 @@ html,body{
         }
     }
 .text-xs{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .text-rg{
     font-size: 1rem;
@@ -263,9 +266,17 @@ html,body{
     color: var(--text-color);
 }
 @media all and (min-width:481px){
-    .header__logo-img{
-        width: auto;
-        height: 2rem;
+    .header__logo-box{
+        height: 100%;
+    }
+    .header__logo-box a{
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    [class*="__logo-img"]{
+        width: 100%;
+        height: unset!important;
     }
     .header__btn--menu{
         display: none;
@@ -395,7 +406,7 @@ html,body{
     }
     .menu:hover .sub-menu-wrap{
         background: unset;
-        font-size: 14px;
+        font-size: 0.875rem;
         top: 100%;
         position: absolute;
         display: block;
@@ -427,7 +438,7 @@ html,body{
 }
 
 /* main container */
-.container{
+.container,.container-lg{
     padding: 0 1rem;
 }
 
@@ -435,6 +446,9 @@ html,body{
     .container{
         max-width: 1440px;
         margin: 0 auto;
+    }
+    .contianer-lg{
+        padding: 0 5%;
     }
 }
 
@@ -549,7 +563,7 @@ video{
 
 /* footer */
 .footer {
-    font-size: 14px;
+    font-size: 0.875rem;
     background: var(--decoration-color);
 }
 

@@ -101,9 +101,12 @@
     top: 0;
 }
 
-#main [id*="section-"] .full-page-text{
+.full-page-text{
     position: absolute;
     top: 50%; left: 50%; transform: translate(-50%, -50%);
+    max-width:calc(100vw * 0.9);
+    width: 100%;
+
     padding-top: var(--header-height);
     z-index: 10;
     color: var(--background-color);
@@ -111,14 +114,9 @@
     flex-direction: column;
     align-items: center;
     gap: 2.5em;
-    width: 100%;
 }
 
 #main #section-wimple .full-page-text{
     align-items: flex-start;
-    top: 33.33%;
-    left: 8vw;
-    transform: translateY(-50%);
-    width: auto;
 }
 
