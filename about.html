@@ -286,137 +286,7 @@
                 </script>
             </div>
         </section>
-        <!-- location -->
-        <section id="section-location"
-        data-aos="fade-up"
-        class="">
-            <div class="container">
-                <div class="headline-wrap">
-                    <p class="text-rg">LOCATION</p>
-                    <h2 class="headline-2">위치</h2>
-                </div>
-                <ul 
-                data-aos="fade-up"
-                class="location__list-wrap">
-                    <!-- 지도 API 사용 -->
-                    <li class="location__list">
-                        <div id="map-01" class="location__map"></div>
-                        <div class="location__desc">
-                            <p class="headline-5">본사</p>
-                            <div class="location__addr-wrap">
-                                <p class="text-xs" id="map-addr-01">부산광역시 동구 망양로 978 (범일동) 4층, 403-404호</p>
-                                <button onclick="copyToClipboard('map-addr-01')">
-                                    <ion-icon name="clipboard-outline"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="location__list">
-                        <div id="map-02" class="location__map"></div>
-                        <div class="location__desc">
-                            <p class="headline-5">서울</p>
-                            <div class="location__addr-wrap">
-                                <p class="text-xs" id="map-addr-02">서울특별시 강남구 봉은사로61길 15 (삼성동) 3층</p>
-                                <button onclick="copyToClipboard('map-addr-02')">
-                                    <ion-icon name="clipboard-outline"></ion-icon>
-                                </button>
-                            </div>
-                            
-                        </div>
-                        
-                    </li>
-                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a59217855875ee59e9c9cfbc8a77144f"></script>
-                    <script>
-                        let locationArr = [
-                            {
-                                'name': '본사',
-                                'address': '부산광역시 동구 망양로 978 (범일동) 4층, 403-404호',
-                                'lat':'35.14149988528981',
-                                'lng':'129.0560210052874'
-                            },
-                            {
-                                'name': '서울',
-                                'address': '서울특별시 강남구 봉은사로61길 15 (삼성동) 3층',
-                                'lat':'37.5121269',
-                                'lng':'127.0459652'
-                            },
-                        ]
-
-                        // 부산
-                        var mapContainer1 = document.getElementById('map-01');
-                        mapOption1 = { 
-                            center: new kakao.maps.LatLng(locationArr[0].lat, locationArr[0].lng), 
-                            level: 3,
-                        };
-                        var map1 = new kakao.maps.Map(mapContainer1, mapOption1); 
-
-                        // 서울
-                        var mapContainer2 = document.getElementById('map-02');
-                        mapOption2 = { 
-                            center: new kakao.maps.LatLng(locationArr[1].lat, locationArr[1].lng), 
-                            level: 3,
-                        };
-                        var map2 = new kakao.maps.Map(mapContainer2, mapOption2); 
-
-
-
-                        // 마커 생성
-                        var markerPosition1  = new kakao.maps.LatLng(locationArr[0].lat, locationArr[0].lng); 
-                        var marker1 = new kakao.maps.Marker({
-                            position: markerPosition1
-                        });
-                        var markerPosition2  = new kakao.maps.LatLng(locationArr[1].lat, locationArr[1].lng); 
-                        var marker2 = new kakao.maps.Marker({
-                            position: markerPosition2
-                        });
-
-                        // 마커 추가
-                        marker1.setMap(map1);
-                        marker2.setMap(map2);
-
-                        // 지도 타입 변경 컨트롤을 생성한다
-                        var mapTypeControl1 = new kakao.maps.MapTypeControl();
-                        var mapTypeControl2 = new kakao.maps.MapTypeControl();
-
-                        // 지도의 상단 우측에 지도 타입 변경 컨트롤을 추가한다
-                        map1.addControl(mapTypeControl1, kakao.maps.ControlPosition.TOPRIGHT);	
-                        map2.addControl(mapTypeControl2, kakao.maps.ControlPosition.TOPRIGHT);
-
-                        // 지도에 확대 축소 컨트롤을 생성한다
-                        var zoomControl1 = new kakao.maps.ZoomControl();
-                        var zoomControl2 = new kakao.maps.ZoomControl();
-
-                        // 지도의 우측에 확대 축소 컨트롤을 추가한다
-                        map1.addControl(zoomControl1, kakao.maps.ControlPosition.RIGHT);
-                        map2.addControl(zoomControl2, kakao.maps.ControlPosition.RIGHT);
-                        
-                        function copyToClipboard(elementId) {
-                            // Create a "hidden" input
-                            var aux = document.createElement("input");
-                            // Assign it the value of the specified element
-                            aux.setAttribute("value", document.getElementById(elementId).innerHTML);
-                            // Append it to the body
-                            document.body.appendChild(aux);
-                            // Highlight its content
-                            aux.select();
-                            // Copy the highlighted text
-                            document.execCommand("copy");
-                            // Remove it from the body
-                            document.body.removeChild(aux);
-                            showNotifi()
-                        }
-
-                        function showNotifi(){
-                            $('body').append(`<div class="custom-notifi-container">클립보드에 복사되었습니다.</div>`)
-                            setTimeout(() => {
-                                $('.custom-notifi-container').remove()
-                            }, 2000)
-                        }
-
-                    </script>
-                </ul>
-            </div>
-        </section>
+       
         <!-- partners -->
         <section id="section-partners"
         data-aos="fade-up"
@@ -431,6 +301,137 @@
                 </ul>
             </div>
         </section>
+         <!-- location -->
+         <section id="section-location"
+         data-aos="fade-up"
+         class="">
+             <div class="container">
+                 <div class="headline-wrap">
+                     <p class="text-rg">LOCATION</p>
+                     <h2 class="headline-2">위치</h2>
+                 </div>
+                 <ul 
+                 data-aos="fade-up"
+                 class="location__list-wrap">
+                     <!-- 지도 API 사용 -->
+                     <li class="location__list">
+                         <div id="map-01" class="location__map"></div>
+                         <div class="location__desc">
+                             <p class="headline-5">본사</p>
+                             <div class="location__addr-wrap">
+                                 <p class="text-xs" id="map-addr-01">부산광역시 동구 망양로 978 (범일동) 4층, 403-404호</p>
+                                 <button onclick="copyToClipboard('map-addr-01')">
+                                     <ion-icon name="clipboard-outline"></ion-icon>
+                                 </button>
+                             </div>
+                         </div>
+                     </li>
+                     <li class="location__list">
+                         <div id="map-02" class="location__map"></div>
+                         <div class="location__desc">
+                             <p class="headline-5">서울</p>
+                             <div class="location__addr-wrap">
+                                 <p class="text-xs" id="map-addr-02">서울특별시 강남구 봉은사로61길 15 (삼성동) 3층</p>
+                                 <button onclick="copyToClipboard('map-addr-02')">
+                                     <ion-icon name="clipboard-outline"></ion-icon>
+                                 </button>
+                             </div>
+                             
+                         </div>
+                         
+                     </li>
+                     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a59217855875ee59e9c9cfbc8a77144f"></script>
+                     <script>
+                         let locationArr = [
+                             {
+                                 'name': '본사',
+                                 'address': '부산광역시 동구 망양로 978 (범일동) 4층, 403-404호',
+                                 'lat':'35.14149988528981',
+                                 'lng':'129.0560210052874'
+                             },
+                             {
+                                 'name': '서울',
+                                 'address': '서울특별시 강남구 봉은사로61길 15 (삼성동) 3층',
+                                 'lat':'37.5121269',
+                                 'lng':'127.0459652'
+                             },
+                         ]
+ 
+                         // 부산
+                         var mapContainer1 = document.getElementById('map-01');
+                         mapOption1 = { 
+                             center: new kakao.maps.LatLng(locationArr[0].lat, locationArr[0].lng), 
+                             level: 3,
+                         };
+                         var map1 = new kakao.maps.Map(mapContainer1, mapOption1); 
+ 
+                         // 서울
+                         var mapContainer2 = document.getElementById('map-02');
+                         mapOption2 = { 
+                             center: new kakao.maps.LatLng(locationArr[1].lat, locationArr[1].lng), 
+                             level: 3,
+                         };
+                         var map2 = new kakao.maps.Map(mapContainer2, mapOption2); 
+ 
+ 
+ 
+                         // 마커 생성
+                         var markerPosition1  = new kakao.maps.LatLng(locationArr[0].lat, locationArr[0].lng); 
+                         var marker1 = new kakao.maps.Marker({
+                             position: markerPosition1
+                         });
+                         var markerPosition2  = new kakao.maps.LatLng(locationArr[1].lat, locationArr[1].lng); 
+                         var marker2 = new kakao.maps.Marker({
+                             position: markerPosition2
+                         });
+ 
+                         // 마커 추가
+                         marker1.setMap(map1);
+                         marker2.setMap(map2);
+ 
+                         // 지도 타입 변경 컨트롤을 생성한다
+                         var mapTypeControl1 = new kakao.maps.MapTypeControl();
+                         var mapTypeControl2 = new kakao.maps.MapTypeControl();
+ 
+                         // 지도의 상단 우측에 지도 타입 변경 컨트롤을 추가한다
+                         map1.addControl(mapTypeControl1, kakao.maps.ControlPosition.TOPRIGHT);	
+                         map2.addControl(mapTypeControl2, kakao.maps.ControlPosition.TOPRIGHT);
+ 
+                         // 지도에 확대 축소 컨트롤을 생성한다
+                         var zoomControl1 = new kakao.maps.ZoomControl();
+                         var zoomControl2 = new kakao.maps.ZoomControl();
+ 
+                         // 지도의 우측에 확대 축소 컨트롤을 추가한다
+                         map1.addControl(zoomControl1, kakao.maps.ControlPosition.RIGHT);
+                         map2.addControl(zoomControl2, kakao.maps.ControlPosition.RIGHT);
+                         
+                         function copyToClipboard(elementId) {
+                             // Create a "hidden" input
+                             var aux = document.createElement("input");
+                             // Assign it the value of the specified element
+                             aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+                             // Append it to the body
+                             document.body.appendChild(aux);
+                             // Highlight its content
+                             aux.select();
+                             // Copy the highlighted text
+                             document.execCommand("copy");
+                             // Remove it from the body
+                             document.body.removeChild(aux);
+                             showNotifi()
+                         }
+ 
+                         function showNotifi(){
+                             $('body').append(`<div class="custom-notifi-container">클립보드에 복사되었습니다.</div>`)
+                             setTimeout(() => {
+                                 $('.custom-notifi-container').remove()
+                             }, 2000)
+                         }
+ 
+                     </script>
+                 </ul>
+             </div>
+         </section>
         <script>
             function addPartners(){
                 html='';
