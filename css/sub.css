@@ -276,7 +276,7 @@
         place-items: center;
     }
     .performance__img-wrap img{
-        width: 18vw;
+        width: 100%
     }
     .performance__list{
         margin-bottom: var(--distance-default);
@@ -321,6 +321,9 @@
 
 
 /* about - partners */
+.partners-list__container{
+    min-height: 20vh;
+}
 .partners-logo{
     width: 100%;
     padding: 1rem;

@@ -477,6 +477,11 @@ video{
         max-height: 100%;
     }
 }
+@media all and (min-width:1920px){
+    .img--small{
+        max-width:100%
+    }
+}
 
 /* footer - selectbox (custom)*/
 [class*="footer__select-wrap--"]{
