@@ -99,7 +99,7 @@
                             <li class="history__img-wrap">
                                 <img
                                 class="history__img lozad"
-                                data-src="https://source.unsplash.com/random/1">
+                                data-src="">
                             </li>
                             <li class="history__list">
                             <ul> 
@@ -125,7 +125,7 @@
                             <li class="history__img-wrap">
                                 <img
                                 class="history__img lozad"
-                                data-src="https://source.unsplash.com/random/2">
+                                data-src="">
                             </li>
                             <li class="history__list">
                             <ul> 
@@ -155,7 +155,7 @@
                             <li class="history__img-wrap">
                                 <img
                                 class="history__img lozad"
-                                data-src="https://source.unsplash.com/random/3">
+                                data-src="">
                             </li>
                             <li class="history__list">
                             <ul> 
@@ -178,7 +178,7 @@
                             <li class="history__img-wrap">
                                 <img
                                 class="history__img lozad"
-                                data-src="https://source.unsplash.com/random/4">
+                                data-src="">
                             </li>
                             <li class="history__list">
                             <ul> 
@@ -436,6 +436,7 @@
             </div>
         </section>
         <script>
+            // 파트너스
             function addPartners(){
                 html='';
                 for(let i=1; i<=6; i++){
@@ -477,6 +478,48 @@
             enableAutoReload: true
         });
         observer.observe();
+
+
+        /*
+            1. unsplash api 연결 후 랜덤 숫자 추출해서 이미지 src 변경
+            2. 서르 unsplash developer 가입 후 UNSPLASH_ACCESS_KEY 변경해주세요.
+            3. 서치 키워드는 query를 통해 변경할 수 있습니다. (추가 api는 언스플래시 문서 참고)
+        */
+
+        let UNSPLASH_FIX_URL = 'https://api.unsplash.com/photos/'
+        let UNSPLASH_ACCESS_KEY = '?client_id=rrNtrFi4kZk9d5ELUAMa348GzJLhmyX__0ec0RxY4rY'
+
+        loadUnsplash()
+
+        function loadUnsplash(){
+            $.ajax({
+                url: `${UNSPLASH_FIX_URL}${UNSPLASH_ACCESS_KEY}`,
+                type: 'GET',
+                datatype: 'json',
+                data:{
+                    query:'AI'
+                }
+            }).done(function(data, textStatus, xhr){
+                let randomNumArr = [];
+                
+                for(let i = 0; i< data.length; i++){
+                    console.log(data[i])
+                        
+                    let RANDOM_NUM = Math.floor(Math.random() * data.length)
+                    // 배열에 랜덤 숫자가 없는 경우 배열에 추가
+                    if (randomNumArr.indexOf(RANDOM_NUM) === -1) {
+                        randomNumArr.push(RANDOM_NUM)
+                        $('.history__img').eq(i).attr('src',data[RANDOM_NUM].urls.full)
+                    }
+                    // 있을 경우 해당 차레 재실행
+                    else{
+                        i--
+                    }
+                }
+            }).fail(function(data, textStatus, xhr){
+                $('.history__img').hide()
+            });
+        }
     </script>
 
 </body>
