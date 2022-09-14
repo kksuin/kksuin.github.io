@@ -487,7 +487,7 @@
         */
 
         let UNSPLASH_FIX_URL = 'https://api.unsplash.com/photos/'
-        let UNSPLASH_ACCESS_KEY = '?client_id=rrNtrFi4kZk9d5ELUAMa348GzJLhmyX__0ec0RxY4rY'
+        let UNSPLASH_ACCESS_KEY = '?client_id=rgeugbGKIGSXJqUQXmZ5QxTKoLtAmtli01z7WYLqo_I'
 
         loadUnsplash()
 
@@ -503,8 +503,6 @@
                 let randomNumArr = [];
                 
                 for(let i = 0; i< data.length; i++){
-                    console.log(data[i])
-                        
                     let RANDOM_NUM = Math.floor(Math.random() * data.length)
                     // 배열에 랜덤 숫자가 없는 경우 배열에 추가
                     if (randomNumArr.indexOf(RANDOM_NUM) === -1) {
