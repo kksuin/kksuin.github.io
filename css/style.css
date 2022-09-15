@@ -34,7 +34,7 @@ html,body{
 }
 @media all and (min-width:769px){
     html,body{
-        font-size: 18px;
+        font-size: calc(14px + 0.1vw);
     }
     :root{
         --distance-default:10.37vh
