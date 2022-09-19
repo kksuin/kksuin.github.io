@@ -45,6 +45,9 @@ html,body{
 }
 
 /* headline set */
+    [class*="headline-"]{
+        letter-spacing: -0.1vw;
+    }
     /* 32px */
     .headline-1{
         font-size: 2rem;
