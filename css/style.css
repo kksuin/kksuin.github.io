@@ -11,7 +11,7 @@
 html,body{
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 16px;
-    line-height: 1.333em;
+    line-height: 1.5em;
     color: var(--text-color);
     word-break: keep-all;
 }
@@ -47,7 +47,8 @@ html,body{
 
 /* headline set */
     [class*="headline-"]{
-        letter-spacing: -0.1vw;
+        /* letter-spacing: -0.1vw; */
+        line-height: 1.5em;
     }
     /* 32px */
     .headline-1{
