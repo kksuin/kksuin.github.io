@@ -53,13 +53,13 @@ html,body{
     .headline-1{
         font-size: 2rem;
         line-height: 1.25em;
-        font-weight: 600;
+        font-weight: 700;
     }
     /* 24px */
     .headline-2{
         font-size: 1.5rem;
         /* line-height: 1.5em; */
-        font-weight: 600;
+        font-weight: 700;
     }
     /* 20px */
     .headline-3{
