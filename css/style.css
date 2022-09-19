@@ -59,19 +59,19 @@ html,body{
     /* 24px */
     .headline-2{
         font-size: 1.5rem;
-        line-height: 1.5em;
+        /* line-height: 1.5em; */
         font-weight: 600;
     }
     /* 20px */
     .headline-3{
         font-size: 1.25rem;
-        line-height: 1.5em;
+        /* line-height: 1.5em; */
         font-weight: 700;
     }
     /* 18px */
     .headline-4{
         font-size: 1.125rem;
-        line-height: 1.5em;
+        /* line-height: 1.5em; */
         font-weight: 700;
     }
     .headline-5{
