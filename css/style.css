@@ -48,7 +48,7 @@ html,body{
 /* headline set */
     [class*="headline-"]{
         /* letter-spacing: -0.1vw; */
-        line-height: 1.5em;
+        line-height: 1.333em;
     }
     /* 32px */
     .headline-1{
